@@ -1,9 +1,10 @@
 name: cicd
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
+  #push:
+   # branches:
+   #   - main
 
 jobs:
   # 1. Build & Test Job
