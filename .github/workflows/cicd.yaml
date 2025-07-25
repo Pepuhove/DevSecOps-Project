@@ -117,7 +117,9 @@ jobs:
 
       - name: Install and Run GitLeaks
         run: |
-          curl -sSL https://github.com/gitleaks/gitleaks/releases/latest/download/gitleaks-linux-amd64 -o gitleaks
-          chmod +x gitleaks
-          sudo mv gitleaks /usr/local/bin/
-          gitleaks detect --source . --report-path=gitleaks-report.json --format json --exit-code 1 || exit 1
+           GITLEAKS_VERSION=$(curl -s https://api.github.com/repos/gitleaks/gitleaks/releases/latest | grep '"tag_name":' | sed -E 's/.*"v([^"]+)".*/\1/')
+           curl -sSL "https://github.com/gitleaks/gitleaks/releases/download/v$GITLEAKS_VERSION/gitleaks_${GITLEAKS_VERSION}_linux_x64.tar.gz" -o gitleaks.tar.gz
+           tar -xzf gitleaks.tar.gz gitleaks
+           chmod +x gitleaks
+           sudo mv gitleaks /usr/local/bin/
+           gitleaks detect --source . --report-path=gitleaks-report.json --format json --exit-code 1
