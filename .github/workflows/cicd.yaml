@@ -82,7 +82,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/app-1:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/devsecops:latest
 
   security_checks:
     needs: docker
@@ -102,7 +102,7 @@ jobs:
       - name: Run Trivy FS & Image Scan
         run: |
           trivy fs --format table -o fs-report.txt .
-          trivy image ${{ secrets.DOCKERHUB_USERNAME }}/app:latest --exit-code 1 --severity HIGH,CRITICAL --ignore-unfixed --format json -o image-report.json || exit 1
+          trivy image ${{ secrets.DOCKERHUB_USERNAME }}/devsecops:latest --exit-code 1 --severity HIGH,CRITICAL --ignore-unfixed --format json -o image-report.json || exit 1
 
       - name: Upload Trivy Reports
         uses: actions/upload-artifact@v4
