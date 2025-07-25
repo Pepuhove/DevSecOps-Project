@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./Footer.css";
 import { NavLink } from "react-router-dom";
 import { FaFacebook, FaWhatsapp, FaEnvelope } from "react-icons/fa";

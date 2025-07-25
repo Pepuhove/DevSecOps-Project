@@ -1,4 +1,3 @@
-import React from "react";
 import "./ThabangArtz.css";
 
 function ThabangArtz() {
@@ -22,36 +21,40 @@ function ThabangArtz() {
             </div>
 
             <div className="info-cntr">
-                <img src="./public/img/mstr.jpg" alt="Fanuel the artist" />
+                <img src="/img/mstr.jpg" alt="Fanuel the artist" />
                 <h3>Breathing Life into Stone</h3>
-                    <p>
+                <p>
                     This piece, carved from the precious Butter Jade, is a story of patience and connection.
-                    "When I first held this stone, it felt alive, as though it carried whispers of its long journey through the earth. 
-                    Butter Jade is not just any stone—it’s soft to the touch but strong in spirit, a perfect canvas for an artist’s vision."<br />
-                   
-                    "I didn’t force the design; I listened to the stone. 
-                    Its natural patterns spoke to me of movement, of flowing rivers and the cycles of life. Every cut, every detail, was a dialogue between my hands and the Butter Jade. 
-                    The spheres you see represent the unity of all things, and the curves reflect the fluidity of existence—how everything is connected, always moving, always evolving."<br />
-
-                   "This sculpture is not just a piece of art—it’s a celebration of the earth’s beauty and the stories it holds.
-                    It reminds us that even the hardest materials can be shaped into something soft, flowing, and alive with meaning."
-                    <br /> <br />
-                    <a href="/about" className="btn unique-btn">Learn more</a> 
-                    </p>
+                    &quot;When I first held this stone, it felt alive, as though it carried whispers of its long journey through the earth.
+                    Butter Jade is not just any stone—it’s soft to the touch but strong in spirit, a perfect canvas for an artist’s vision.&quot;
+                    <br />
+                    &quot;I didn’t force the design; I listened to the stone.
+                    Its natural patterns spoke to me of movement, of flowing rivers and the cycles of life. Every cut, every detail, was a dialogue between my hands and the Butter Jade.
+                    The spheres you see represent the unity of all things, and the curves reflect the fluidity of existence—how everything is connected, always moving, always evolving.&quot;
+                    <br />
+                    &quot;This sculpture is not just a piece of art—it’s a celebration of the earth’s beauty and the stories it holds.
+                    It reminds us that even the hardest materials can be shaped into something soft, flowing, and alive with meaning.&quot;
+                    <br />
+                    <br />
+                    <a href="/about" className="btn unique-btn">Learn more</a>
+                </p>
             </div>
 
             <div className="sculpture">
                 <h4>Sculpted pieces</h4>
                 <h2>Timeless Stone<span>Creations</span></h2>
-                <h4>By<span>Fanuel Mutemasango</span></h4>
+                <h4>By<span> Fanuel Mutemasango</span></h4>
                 <div className="sculp-grid">
-                    <div><img src="./public/img/queen-3.jpg" alt="face of a zulu queen" />
+                    <div>
+                        <img src="/img/queen-3.jpg" alt="face of a zulu queen" />
                         <p>AFRICAN QUEEN</p>
                     </div>
-                    <div> <img src="./public/img/mother.jpg" alt="Fanuel the artist" />
+                    <div>
+                        <img src="/img/mother.jpg" alt="Fanuel the artist" />
                         <p>MOTHER AND CHILD</p>
                     </div>
-                    <div><img src="./public/img/zim.jpg" alt="zimbabwe crying" />
+                    <div>
+                        <img src="/img/zim.jpg" alt="zimbabwe crying" />
                         <p>ZIMBABWE CRYING</p>
                     </div>
                 </div>

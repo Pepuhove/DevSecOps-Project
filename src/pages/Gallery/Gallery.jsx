@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./Gallery.css";
 import galleryData from "./GalleryInfo";
 import Header from "../../components/Header/Header";
